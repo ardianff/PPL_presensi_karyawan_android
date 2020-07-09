@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/house"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/masuk"
+            android:icon="@drawable/icon_absensi"
+            android:title="@string/presensi_masuk" />
+        <item
+            android:id="@+id/keluar"
+            android:icon="@drawable/icon_absensi"
+            android:title="@string/presensi_keluar" />
+        <item
+            android:id="@+id/petunjuk"
+            android:icon="@drawable/petunjuk"
+            android:title="@string/petunjuk_penggunaan" />
+        <item
+            android:id="@+id/nav_keluar"
+            android:icon="@drawable/icon_keluar2"
+            android:title="@string/keluar" />
+    </group>
+
+
+
+</menu>

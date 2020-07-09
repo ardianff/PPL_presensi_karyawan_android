@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.presensifacegeofencing">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".config.AppControler"
+        android:allowBackup="true"
+        android:icon="@mipmap/icgeo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icgeo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup,icon,theme,label">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+        <meta-data
+
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <service
+            android:name=".config.GeofenceTransitionService"
+            android:enabled="true"
+            android:exported="true" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+
+            </intent-filter>
+
+
+        </activity>
+
+        <receiver android:name=".config.GeofenceTransitionService"
+            tools:ignore="WrongManifestParent">
+            <intent-filter>
+                <action android:name="com.example.GEOFENCE_TRANSITION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Login"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".home.Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".presensi.Presensi"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:theme="@style/AppThemebaru"
+            android:parentActivityName=".home.Home"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:name=".historipresensi.HistoriPresensi"/>
+        <activity
+            android:theme="@style/AppThemebaru"
+            android:parentActivityName=".home.Home"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:name=".historipresensi.Masuk"/>
+        <activity
+            android:theme="@style/AppThemebaru"
+            android:parentActivityName=".home.Home"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:name=".historipresensi.Keluar"/>
+        <activity
+            android:name=".notif.Notif"
+            android:parentActivityName=".home.Home"
+            android:theme="@style/AppThemebaru" />
+        <activity
+            android:name=".presensi.PresMasuk"
+            android:parentActivityName=".home.Home"
+            android:theme="@style/AppThemebaru" />
+        <activity
+            android:name=".presensi.PresKeluar"
+            android:parentActivityName=".home.Home"
+            android:theme="@style/AppThemebaru" />
+
+    </application>
+
+</manifest>

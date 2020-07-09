@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Presensi Karyawan</string>
+    <string name="label_loading">Please Wait…</string>
+    <string name="label_interval">Interval: </string>
+    <string name="label_indicator_size">Indicator size: </string>
+    <string name="label_animate_indicators">Animate indicators: </string>
+    <string name="label_hide_indicators">Hide Indicators</string>
+    <string name="label_loop_slides">Loop slides: </string>
+    <array name="page_indicators">
+        <item>Circle</item>
+        <item>Dash</item>
+        <item>Round Square</item>
+        <item>Square</item>
+        <item>Custom</item>
+    </array>
+
+    <string name="subscribe_to_news">Subscribe To News</string>
+    <string name="log_token">Log Token</string>
+
+    <string name="msg_subscribed">Subscribed to news topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <!--
+        This is the name that users will see when interacting with this channel.
+        It should describe the category of notifications that will be sent through this channel
+     -->
+    <string name="default_notification_channel_name" translatable="true">News</string>
+
+    <string name="loading">Please wait Loading…</string>
+    <string name="new_product">New</string>
+    <string name="user">User</string>
+    <string name="karyawan">Karyawan</string>
+    <string name="alamat">Alamat</string>
+    <string name="lokasi">lokasi</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="tentang">Tentang</string>
+    <string name="histori">Histori Presensi</string>
+    <string name="presensi">Presensi</string>
+    <string name="home">Home</string>
+    <string name="notifikasi">Notifikasi</string>
+    <string name="page_indicator">Page Indicator :</string>
+    <string name="logo">Logo</string>
+    <string name="customization">Customization</string>
+    <string name="you_can_test_various_settings_from_here">You can test various settings from here</string>
+    <string name="_1990_01_01">1990-01-01</string>
+    <string name="menu_bar">Menu Bar</string>
+    <string name="sistem_presensi_karyawan_pt_jaya_sukses">Sistem Presensi Karyawan\nPT. BOS BERCUAN</string>
+    <string name="contributor">Contributor</string>
+    <string name="udinus">UDINUS</string>
+    <string name="septian_muhammad_adi">Septian Muhammad Adi</string>
+    <string name="a11_2017_10346">A11.2017.10346</string>
+    <string name="alif_ananda_wijapena_p">Alif Ananda Wijapena P</string>
+    <string name="a11_2017_10351">A11.2017.10351</string>
+    <string name="nafik_akhsana_fajar">Nafik Akhsana Fajar</string>
+    <string name="a11_2017_10359">A11.2017.10359</string>
+    <string name="ardian_ferdy_firmansyah">Ardian Ferdy Firmansyah</string>
+    <string name="a11_2017_10363">A11.2017.10363</string>
+    <string name="andin_fairuz_khosyi">Andin Fairuz Khosyi</string>
+    <string name="a11_2017_10370">A11.2017.10370</string>
+    <string name="lestari_khoirunnisa">Lestari Khoirunnisa</string>
+    <string name="a11_2017_10415">A11.2017.10415</string>
+    <string name="kritik_saran">Kritik Saran</string>
+    <string name="terima_kasih">Terima Kasih</string>
+    <string name="atas_kritik_dan_saran_anda">Atas Kritik dan Saran anda !!!</string>
+    <string name="close">Close</string>
+    <string name="wifi">WIFI</string>
+    <string name="no_internet">No Internet</string>
+    <string name="please_check_your_connection_status_and_try_again">Please check your connection status and try again</string>
+    <string name="server_down">Server Down</string>
+    <string name="silahkan_kembali_lagi_nanti">Silahkan kembali lagi nanti !!!</string>
+    <string name="data_image">Data Image</string>
+    <string name="data_tidak_ditemukan">Data tidak ditemukan...!</string>
+    <string name="universitas_dian_nuswantoro">Universitas Dian Nuswantoro</string>
+    <string name="sistem_presensi_karyawan">Sistem Presensi Karyawan</string>
+    <string name="tekan_ok_untuk_melanjutkan_login">Tekan Ok, Untuk melanjutkan login</string>
+    <string name="ok">Ok</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="jam">Jam</string>
+    <string name="tipe">Tipe</string>
+    <string name="judul">Judul</string>
+    <string name="isi">Isi</string>
+    <string name="menggunakan_metode_geofencing_berbasis_android">Menggunakan Metode Geofencing Berbasis Android</string>
+    <string name="image_login">Image Login</string>
+    <string name="login">LOGIN</string>
+    <string name="username_image">Username Image</string>
+    <string name="username">Username</string>
+    <string name="kata_sandi">Kata Sandi</string>
+    <string name="ingat_saya">Ingat saya</string>
+    <string name="login_user">Login</string>
+    <string name="notifikasi_image">Notifikasi Image</string>
+    <string name="lattitude">Lattitude :</string>
+    <string name="longitude">Longitude :</string>
+    <string name="jam_presensi">Jam :</string>
+    <string name="presensi_masuk">Presensi Masuk</string>
+    <string name="presensi_keluar">Presensi Keluar</string>
+    <string name="ambil_foto_wajah">Ambil Foto Wajah</string>
+    <string name="simpan">Simpan</string>
+    <string name="pastikan_mengambil_foto_wajah_dengan_benar">Pastikan Mengambil Foto Wajah\nDengan Benar</string>
+    <string name="user_photo">User Photo</string>
+    <string name="masuk">Masuk</string>
+    <string name="splash_screen_image">Splash Screen Image</string>
+    <string name="sistem_presensi_karyawan_menggunakan_metode_geofencing">Sistem Presensi Karyawan Menggunakan Metode Geofencing</string>
+    <string name="berbasis_mobile_android">Berbasis Mobile Android</string>
+    <string name="pencarian_berdasar_tanggal">Pencarian berdasar tanggal...</string>
+    <string name="under_nconstruction">Under\nConstruction</string>
+    <string name="keluar">Keluar</string>
+    <string name="petunjuk_penggunaan">Petunjuk penggunaan</string>
+    <string name="log_out">Log out</string>
+    <string name="n0_hp">12345678</string>
+    <string name="txt_tanggal_lahir">Tanggal Lahir :</string>
+    <string name="txt_no_hp">No HP :</string>
+    <string name="area_kantor">Untuk Absensi Anda Harus\nDi Area Kantor !!!</string>
+</resources>
