@@ -81,7 +81,7 @@ public class PresMasuk extends AppCompatActivity implements View.OnClickListener
     int cek;
     String ambilusername;
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
+    @RequiresApi(api = Build.VERSION_CODES.Q)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

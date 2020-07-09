@@ -1,5 +1,6 @@
 package com.example.presensifacegeofencing.config;
 
+import android.annotation.SuppressLint;
 import android.app.IntentService;
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -23,6 +24,7 @@ import com.google.android.gms.location.GeofencingEvent;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressLint("Registered")
 public class GeofenceTransitionService extends IntentService {
 
     private static final String TAG = GeofenceTransitionService.class.getSimpleName();
@@ -106,7 +108,7 @@ public class GeofenceTransitionService extends IntentService {
     // membuat notifikasi
     private Notification createNotification(String msg, PendingIntent notificationPendingIntent) {
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
             int importance = NotificationManager.IMPORTANCE_HIGH;
             NotificationChannel mChannel = new NotificationChannel(CHANNEL_ID, name, importance);
             mChannel.setDescription(Description);

@@ -103,7 +103,7 @@ public class Presensi extends AppCompatActivity implements
 
     SharedPreferences username;
     Toolbar toolbar;
-    @RequiresApi(api = Build.VERSION_CODES.M)
+    @RequiresApi(api = Build.VERSION_CODES.Q)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -113,14 +113,10 @@ public class Presensi extends AppCompatActivity implements
         toolbar.getContext().setTheme(R.style.AppThemebaru);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-
-
         textLat = (TextView) findViewById(R.id.lat);
         jam = (TextView) findViewById(R.id.jam);
         textLong = (TextView) findViewById(R.id.lon);
         telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-
-
         if (checkSelfPermission(Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    Activity#requestPermissions
@@ -200,8 +196,6 @@ public class Presensi extends AppCompatActivity implements
                     .build();
         }
     }
-
-
     public void onStart() {
         super.onStart();
 

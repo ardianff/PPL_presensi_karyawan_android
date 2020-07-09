@@ -76,7 +76,7 @@ public class PresKeluar extends AppCompatActivity implements View.OnClickListene
     Time today;
     int cek;
     String ambilusername;
-    @RequiresApi(api = Build.VERSION_CODES.M)
+    @RequiresApi(api = Build.VERSION_CODES.Q)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
